@@ -40,7 +40,7 @@
 
 /* hero styling */
 .hero {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/img/home.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/home.jpg);
 }
 .hero .content {
     animation: slide-down .5s linear backwards;
@@ -99,12 +99,12 @@
 
 /* testimonials */
 #testimonials {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/img/review.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/review.jpg);
 }
 
 /* home wrapper */
 .home-wrapper {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/img/gallery.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/gallery.jpg);
 }
 
 /* gallery page */
@@ -117,5 +117,5 @@
 
 /* about page */
 .about {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(/img/review.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/review.jpg);
 }
