@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Gallery | Portraits page</title>
+</head>
+<body class="font-Nunito transition-all duration-500 bg-body-bg">
+     <!-- header -->
+  <header class="header">
+    <h1 class="brand"><a href="index.html">quest</a></h1>
+
+    <!-- first nav links -->
+    <nav>
+      <ul>
+        <li><a href="wedding.html">weddings</a></li>
+        <li><a href="portrait.html">portraits</a></li>
+        <li><a href="fashion.html">fashion</a></li>
+        <li><a href="nature.html">nature</a></li>
+        <li><a href="sport.html">sport</a></li>
+        <li><a href="travel.html">travel</a></li>
+        <li><a href="street.html">outdoor</a></li>
+      </ul>
+    </nav>
+
+    <!-- second nav links -->
+    <div class="navbar">
+      <div class="list"><a href="wedding.html">weddings</a></div>
+      <div class="list"><a href="portrait.html">portraits</a></div>
+      <div class="list"><a href="fashion.html">fashion</a></div>
+      <div class="list"><a href="nature.html">nature</a></div>
+      <div class="list"><a href="sport.html">sport</a></div>
+      <div class="list"><a href="travel.html">travel</a></div>
+      <div class="list"><a href="street.html">outdoor</a></div>
+    </div>
+
+    <!-- hamburger menu -->
+    <div class="fas fa-bars" id="menu-btn"></div>
+  </header>
+
+  <!-- hero -->
+  <section id="home" class="home-wrapper min-h-[50vh] w-full bg-no-repeat bg-center relative px-4 md:px-[7%] flex justify-center items-center">
+    <p class="text-2xl text-text-color capitalize">portraits</p>
+  </section>
+
+  <!-- gallery -->
+  <div class="image-box">
+    <a href="/img/portrait-1.jpg" class="block overflow-hidden">
+      <img src="/img/portrait-1.jpg" alt="" class="mb-4 rounded-lg">
+    </a>
+    <a href="/img/portrait-2.jpg" class="block">
+      <img src="/img/portrait-2.jpg" alt="" class="mb-4 rounded-lg">
+    </a>
+    <a href="/img/portrait-3.jpg" class="block">
+      <img src="/img/portrait-3.jpg" alt="" class="mb-4 rounded-lg">
+    </a>
+    <a href="/img/portrait-4.jpg" class="block">
+      <img src="/img/portrait-4.jpg" alt="" class="mb-4 rounded-lg">
+    </a>
+    <a href="/img/portrait-5.jpg" class="block">
+      <img src="/img/portrait-5.jpg" alt="" class="mb-4 rounded-lg">
+    </a>
+  </div>
+
+  <!-- footer -->
+  <footer class="md:px-[7%] px-4 py-6 bg-footer-bg grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <!-- box 1 -->
+    <div>
+      <h2 class="text-xl sm:text-2xl text-text-color mb-3"><a href="index.html" class="font-bold italic capitalize">quest</a></h2>
+      <p class="text-text-color font-thin capitalize text-sm">copyright &copy 2022 ikediashi anita ifeoma</p>
+    </div>
+    <!-- box 2 -->
+    <div>
+      <p class="text-text-color font-semibold capitalize mb-3">quick links</p>
+      <div class="my-1"><a href="wedding.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">weddings</a></div>
+      <div class="my-1"><a href="portrait.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">portraits</a></div>
+      <div class="my-1"><a href="fashion.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">fashion</a></div>
+      <div class="my-1"><a href="nature.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">nature</a></div>
+      <div class="my-1"><a href="sport.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">sport</a></div>
+      <div class="my-1"><a href="travel.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">travel</a></div>
+      <div class="my-1"><a href="street.html" class="text-text-color hover:tracking-wide capitalize font-extralight text-sm sm:text-base">outdoor</a></div>
+    </div>
+    <!-- box 3 -->
+    <div>
+      <p class="text-text-color font-thin text-xs sm:text-sm">Designed using Tailwind CSS <br>and Swiper JS</p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script src="/src/index.js"></script>
+  <script src="/src/gallery.js"></script>
+</body>
+</html>

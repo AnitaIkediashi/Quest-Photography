@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* header styling */
+.header {
+    @apply md:px-[7%] px-4 py-5 fixed top-0 z-20 w-full flex items-center justify-between 
+}
+.header h1 {
+    @apply text-xl sm:text-2xl md:text-4xl text-text-color
+}
+.header h1 a {
+    @apply font-bold italic capitalize
+}
+.header ul {
+    @apply md:flex md:items-center hidden
+}
+.header ul li {
+    @apply md:mx-4
+}
+.header ul li a {
+    @apply capitalize md:text-sm lg:text-lg hover:border-b-2 hover:border-[#aea384] font-[600] text-text-color
+}
+.navbar {
+    @apply md:hidden absolute top-full -right-full h-screen w-56 bg-text-color p-4 ease-in
+}
+.navbar.active {
+    @apply right-0
+}
+.navbar .list {
+    @apply my-4 pb-1 border-b-[1px] border-[#ccc]
+}
+.navbar .list a {
+    @apply text-sm font-bold capitalize hover:tracking-[.1rem] text-header-text
+}
+#menu-btn {
+    @apply text-sm sm:text-xl md:hidden text-text-color
+}
+
+/* hero styling */
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/home.jpg);
+}
+.hero .content {
+    animation: slide-down .5s linear backwards;
+}
+@keyframes slide-down {
+    0% {
+        transform: translateY(-7rem);
+        opacity: 0;
+    }
+}
+.hero .socials {
+    animation: slide-left .6s linear 1s backwards;
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(-7rem);
+        opacity: 0;
+    }
+}
+
+/* modal */
+.modal {
+    @apply max-w-xs bg-header-bg border-0 px-4 py-7 relative
+}
+.modal::backdrop {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* gallery */
+.box {
+    @apply basis-44 grow shrink h-44 relative
+}
+.box .content-1 {
+    @apply absolute top-0 right-0 px-3 flex flex-col items-center justify-center w-full h-full
+}
+.box:hover .content-1 {
+    @apply  bg-black bg-opacity-60 ease-linear duration-300
+}
+
+/* pricing */
+#pricing .content-2 {
+    @apply bg-text-color py-4 hover:bg-transparent
+}
+.content-2:hover p {
+    @apply text-text-color
+}
+.content-2:hover ul li {
+    @apply text-text-color
+}
+.content-2:hover button {
+    @apply text-text-color
+}
+#pricing .swiper-slide-active:hover {
+    @apply opacity-100 cursor-pointer
+}
+
+/* testimonials */
+#testimonials {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/review.jpg);
+}
+
+/* home wrapper */
+.home-wrapper {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/gallery.jpg);
+}
+
+/* gallery page */
+.image-box {
+    @apply sm:columns-2 columns-1 w-1/2 mx-auto my-6 gap-4
+}
+.image-box a:hover img {
+    @apply scale-105 ease-in duration-[400ms]
+}
+
+/* about page */
+.about {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../img/review.jpg);
+}
